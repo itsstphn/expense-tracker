@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="budget-section">
+            <p>Remaining Budget is:</p>
+            <h1 class="display-budget">00.00 PHP</h1>
+        </div>
+        <form class="budget-form">
+            <input type="number" class="budget-input" placeholder="Enter Budget" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Budget'">
+            <input type="submit" class="submit-budget" hidden>
+        </form>
+        
+        <form class="exp-form">
+            <input type="number" class="exp-input">
+            <button type="submit" class="submit-input"><p>Add Expense</p></button>
+        </form>
+        <div class="expenses">
+            <ul class="exp-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

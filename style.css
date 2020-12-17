@@ -1,0 +1,117 @@
+
+:root {
+
+    --primary: #CEA07E;
+    --secondary: #846c5b;
+    --tertiary: #443742;
+}
+
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary);
+}
+
+.container {
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+}
+
+.container .budget-section {
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.container .budget-section h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container .budget-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container .budget-form .budget-input {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    height: 2rem;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: white;
+    margin-bottom: 3rem;
+    padding-bottom: .5rem;
+    background-color: var(--tertiary);
+}
+
+.container .budget-input:focus {
+    outline: none;
+}
+
+.container form.exp-form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    /* flex-direction: column; */
+    width: 25rem;
+    justify-items: center;
+}
+
+
+.container form.exp-form .exp-input {
+    /* -webkit-appearance: none; */
+    justify-self: flex-start;
+    height: 2rem;
+    width: 15rem;
+    background-color: white;
+    /* border: 1px solid var(--primary); */
+    color: var(--tertiary);
+    padding: .3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* remove arrow buttons default of input type=number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container form.exp-form .exp-input:focus {
+    outline: none;
+}
+
+.container form.exp-form button {
+    font: .8rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+}
+
+
+.container .expenses {
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.container .expenses ul li {
+    list-style: none;
+    color: white;
+}
